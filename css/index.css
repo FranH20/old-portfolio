@@ -3,8 +3,9 @@
     /* Colors */
     --color-primary: #239D60;
     --color-secondary: #F9F9F9;
-    --color-backgroud: #54436B;
+    --color-backgroud: #212125;
     --color-light: #ACFFAD;
+    --color-button-activate:#4AA96C;
     --color-yellow: #F7F39A;
     /* Size letters */
     --title-title: 40px;
@@ -119,9 +120,18 @@ section{
     width: 330px;
     padding: 0.2em;
     margin: 0.2em 0;
+    border: none;
     background-color: var(--color-primary);
+    padding: 14px 16px;
     color: var(--color-secondary);
     font-size: var(--title-paragraph);
+}
+.item1__container--left button:active {
+    background-color: var(--color-button-activate)
+}
+.item1__container--left button:hover{
+    cursor: pointer;
+    background-color: var(--color-button-activate)
 }
 .item1__container--right {
     width: 100%;
@@ -138,8 +148,40 @@ section{
     display: flex;
     justify-content: space-between;
 }
+.item__skill {
+    padding-bottom: 0.3em;
+}
 .skills {
     text-align: right;
     padding: 10px 0;
 }
-.html {width: 90%; border-radius: 58px;background-color: var(--color-light);}
+/* Lenguajes */
+.python {width: 70%; border-radius: 58px;background-color: var(--color-light);}
+.js {width: 30%; border-radius: 58px;background-color: var(--color-light);}
+.java {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.csharp {width: 30%; border-radius: 58px;background-color: var(--color-light);}
+/* Front-End */
+.html {width: 75%; border-radius: 58px;background-color: var(--color-light);}
+.css {width: 70%; border-radius: 58px;background-color: var(--color-light);}
+.reactjs {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+/* Back-End */
+.fastapi {width: 55%; border-radius: 58px;background-color: var(--color-light);}
+.flask {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.django {width: 25%; border-radius: 58px;background-color: var(--color-light);}
+.nodejs {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+/* Desarrollo movil */
+.androidstudio {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.reactnative {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+/* Base de datos */
+.sqlserver {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+.postgresql {width: 20%; border-radius: 58px;background-color: var(--color-light);}
+.mysql {width: 65%; border-radius: 58px;background-color: var(--color-light);}
+.mongodb {width: 45%; border-radius: 58px;background-color: var(--color-light);}
+.firebase {width: 45%; border-radius: 58px;background-color: var(--color-light);}
+/* Diseño */
+.figma {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.adobexd {width: 20%; border-radius: 58px;background-color: var(--color-light);}
+/* Herramientas */
+.git {width: 75%; border-radius: 58px;background-color: var(--color-light);}
+.github {width: 65%; border-radius: 58px;background-color: var(--color-light);}
+.debian {width: 30%; border-radius: 58px;background-color: var(--color-light);}
