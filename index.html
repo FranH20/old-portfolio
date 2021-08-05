@@ -5,49 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🌎 Mi portafolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css" />
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <nav id="nav">
-            <div class="nav-container">
-                
-                <ul>
-                    <li>
-                        <a href="#main">Sobre mi</a>        
-                    </li>
-                    <li>
-                        <a>Skills</a>
-                    </li>
-                    <li>
-                        <a>Trabajos</a>
-                    </li>
-                    <li>
-                        <a>Proyectos</a>    
-                    </li>
-                    <li>
-                        <a>Proyectos en grupo</a>
-                    </li>
-                </ul>
+            <div class="nav__container">
+                <div class="container__items">
+                    <div class="items__left">
+                        <a href="#">Franklin Huichi</a>
+                    </div> 
+                    <div class="items__right">
+                        <ul>
+                            <li></li>
+                            <li><a href="#main">Acerca de mi</a></li>
+                            <li><a>Skills</a></li>
+                            <li><a>Trabajos</a></li>
+                            <li><a>Proyectos</a></li>
+                            <li><a>Estudios</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
-        <header id="#main">
-            <div class="header-container">
-                <div class="header-content">
-                    <div class="header-avatar">
-                        <img src="./images/avatar.jpg"/>
+        <header id="main">
+            <div class="header__container">
+                <div class="container__content">
+                    <div class="content__avatar">
+                        <img src="./assets/images/avatar.svg"/>
                     </div>
-                    <div class="header-bio">
-                        <div class="header-description">
-                            <h1>Hi 👋, I'm Franklin Huichi Contreras <h1>
-                            <p>I am a software developer from Perú, I like to program in Python and JavaScript, I am currently ready and prepared to work or collaborate with developers.</p>
+                    <div class="content__bio">
+                        <div class="bio__description">
+                            <h1>Hola 👋, Yo soy Franklin Huichi Contreras<h1>
+                            <p>Soy un desarrollador de software de Perú, me gusta programar en Python y JavaScript, actualmente estoy listo y preparado para trabajar o colaborar con desarrolladores.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <section></section>
+        <article>
+            <section>
+                <div class="article__container">
+                    <div class="item1">
+                        <h1>Skills</h1>
+                        <div class="item1__container">
+                            <div class="item1__container--left">
+                                <button class="item1__container--tablinks" onclick="openSkill(event, 'frontend')">Front-End</button>
+                                <button class="item1__container--tablinks" onclick="openSkill(event, 'backend')">Back-End</button>
+                                <button class="item1__container--tablinks" onclick="openSkill(event, 'database')">Base de datos</button>
+                                <button class="item1__container--tablinks" onclick="openSkill(event, 'design')">Diseño</button>
+                                <button class="item1__container--tablinks" onclick="openSkill(event, 'tools')">Herramientas</button>
+                                <button class="item1__container--tablinks" onclick="openSkill(event, 'otros')">Otros</button>
+                            </div>
+                            <div class="item1__container--right">
+                                <div class="item1__container--skill">
+                                    <div class="item1__container--legend">
+                                        <p>HTML</p>
+                                        <p>90%</p>
+                                    </div>
+                                    <div class="item1__container--number">
+                                        <div class="skills html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
         <footer></footer>
     </div>
 </body>
+<script src="./js/index.js"></script>
 </html>
