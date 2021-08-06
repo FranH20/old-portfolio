@@ -24,8 +24,8 @@
                         <ul>
                             <li></li>
                             <li><a href="#main">Acerca de mi</a></li>
-                            <li><a>Skills</a></li>
-                            <li><a>Trabajos</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a>Experiencia</a></li>
                             <li><a>Proyectos</a></li>
                             <li><a>Estudios</a></li>
                         </ul>
@@ -49,243 +49,264 @@
             </div>
         </header>
         <article>
-            <section>
+            <section id="skills">
                 <div class="article__container">
-                    <div class="item1">
+                    <div class="item">
                         <h1>Skills</h1>
-                        <div class="item1__container">
-                            <div class="item1__container--left">
-                                <button class="item1__container--tablinks" onclick="openSkill(event, 'lenguajes')">Lenguajes</button>
-                                <button class="item1__container--tablinks" onclick="openSkill(event, 'frontend')">Front-End</button>
-                                <button class="item1__container--tablinks" onclick="openSkill(event, 'backend')">Back-End</button>
-                                <button class="item1__container--tablinks" onclick="openSkill(event, 'mobile')">Desarrollo movil</button>
-                                <button class="item1__container--tablinks" onclick="openSkill(event, 'database')">Base de datos</button>
-                                <button class="item1__container--tablinks" onclick="openSkill(event, 'design')">Diseño</button>
-                                <button class="item1__container--tablinks" onclick="openSkill(event, 'tools')">Herramientas</button>
+                        <div class="item__container">
+                            <div class="item__container--left">
+                                <button class="button item__container--tablinks" onclick="openSkill(event, 'lenguajes')">Lenguajes</button>
+                                <button class="button item__container--tablinks" onclick="openSkill(event, 'frontend')">Front-End</button>
+                                <button class="button item__container--tablinks" onclick="openSkill(event, 'backend')">Back-End</button>
+                                <button class="button item__container--tablinks" onclick="openSkill(event, 'mobile')">Desarrollo movil</button>
+                                <button class="button item__container--tablinks" onclick="openSkill(event, 'database')">Base de datos</button>
+                                <button class="button item__container--tablinks" onclick="openSkill(event, 'design')">Diseño</button>
+                                <button class="button item__container--tablinks" onclick="openSkill(event, 'tools')">Herramientas</button>
                             </div>
-                            <div class="item1__container--right">
-                                <div id="lenguajes" class="item1__container--skill">
+                            <div class="item__container--right">
+                                <div id="lenguajes" class="item__container--skill">
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Python</p>
                                             <p>70%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills python"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>JavaScript</p>
                                             <p>30%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills js"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Java</p>
                                             <p>40%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills java"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>C#</p>
                                             <p>30%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills csharp"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="frontend" class="item1__container--skill" style="display: none;" >
+                                <div id="frontend" class="item__container--skill" style="display: none;" >
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>React Js</p>
                                             <p>35%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills reactjs"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>HTML</p>
                                             <p>75%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills html"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>CSS</p>
                                             <p>70%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills css"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="backend" class="item1__container--skill" style="display: none;" >
+                                <div id="backend" class="item__container--skill" style="display: none;" >
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Fast Api</p>
                                             <p>55%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills fastapi"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Flask</p>
                                             <p>40%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills flask"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Django</p>
                                             <p>25%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills django"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>NodeJs</p>
                                             <p>35%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills nodejs"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="mobile" class="item1__container--skill" style="display: none;" >
+                                <div id="mobile" class="item__container--skill" style="display: none;" >
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Android Studio</p>
                                             <p>40%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills androidstudio"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>React native</p>
                                             <p>35%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills reactnative"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="database" class="item1__container--skill" style="display: none;" >
+                                <div id="database" class="item__container--skill" style="display: none;" >
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Sql Server</p>
                                             <p>35%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills sqlserver"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>PostgreSQL</p>
                                             <p>20%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills postgresql"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>MySQL</p>
                                             <p>65%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills mysql"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>MongoDB</p>
                                             <p>45%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills mongodb"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
-                                            <p>Firebase</p>
+                                        <div class="item__container--legend">
+                                            <p>Firebase Realtime Database</p>
                                             <p>45%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills firebase"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="design" class="item1__container--skill" style="display: none;" >
+                                <div id="design" class="item__container--skill" style="display: none;" >
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Figma</p>
                                             <p>40%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills figma"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Adobe XD</p>
                                             <p>20%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills adobexd"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div id="tools" class="item1__container--skill" style="display: none;" >
+                                <div id="tools" class="item__container--skill" style="display: none;" >
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Git</p>
                                             <p>75%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills git"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Github</p>
                                             <p>65%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills github"></div>
                                         </div>
                                     </div>
                                     <div class="item__skill">
-                                        <div class="item1__container--legend">
+                                        <div class="item__container--legend">
                                             <p>Debian</p>
                                             <p>30%</p>
                                         </div>
-                                        <div class="item1__container--number">
+                                        <div class="item__container--number">
                                             <div class="skills debian"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="experiences">
+                <div class="article__container">
+                    <div class="item">
+                        <h1>Experiencia</h1>
+                        <div class="experiences__container">
+                            <button class="button experiences__container--accordion">
+                                <div class="button_description">
+                                    <p>Universidad Privada de Tacna</p> &nbsp<span>May/2021 - Jun/2021</span>
+                                </div>
+                                <img src="./assets/icons/arrow_down.svg"/>
+                            </button>
+                            <button class="button experiences__container--accordion">
+                                <div class="button_description">
+                                    <p>Corporación Capacitadora del SUR S.A.C</p> &nbsp<span>Dic/2020 - Mar/2021</span>
+                                </div>
+                                <img src="./assets/icons/arrow_down.svg"/>
+                            </button>
                         </div>
                     </div>
                 </div>

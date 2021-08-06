@@ -10,7 +10,7 @@
     /* Size letters */
     --title-title: 40px;
     --title-paragraph: 30px;
-    --title-nav: 18px;
+    --title-alpha: 20px;
     --max-width: 1300px;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -22,9 +22,12 @@ p {
     font-size: var(--title-paragraph);
 }
 a {
-    font-size: var(--title-nav);
+    font-size: var(--title-alpha);
     font-weight: bold;
     text-decoration: none;
+}
+span {
+    font-size: var(--title-alpha);
 }
 a:visited {
     color: var(--color-secondary);
@@ -104,47 +107,51 @@ section{
     max-width: var(--max-width);
     width: 100%;
 }
-.item1{
+.item{
     display: flex;
     flex-direction: column;
 }
-.item1__container {
+.item__container {
     display: flex;
 }
-.item1__container--left {
+.item__container--left {
     display: flex;
     flex-direction: column;
 }
-.item1__container--tablinks{
+.button{
     border-radius: 50px;
-    width: 330px;
+    width: 100%;
     padding: 0.2em;
     margin: 0.2em 0;
-    border: none;
+    order: none;
     background-color: var(--color-primary);
-    padding: 14px 16px;
     color: var(--color-secondary);
     font-size: var(--title-paragraph);
+    padding: 14px 16px;
 }
-.item1__container--left button:active {
+.button:active{
     background-color: var(--color-button-activate)
 }
-.item1__container--left button:hover{
+.button:hover{
     cursor: pointer;
     background-color: var(--color-button-activate)
 }
-.item1__container--right {
+.item__container--tablinks {
+    width: 330px;
+}
+
+.item__container--right {
     width: 100%;
     padding: 0 5em;
 }
 
-.item1__container--number {
+.item__container--number {
     width: 100%;
     background-color: var(--color-yellow);
     border-radius: 58px;
     border: none;
 }
-.item1__container--legend {
+.item__container--legend {
     display: flex;
     justify-content: space-between;
 }
@@ -185,3 +192,20 @@ section{
 .git {width: 75%; border-radius: 58px;background-color: var(--color-light);}
 .github {width: 65%; border-radius: 58px;background-color: var(--color-light);}
 .debian {width: 30%; border-radius: 58px;background-color: var(--color-light);}
+
+article section {
+    padding-bottom: 2em;
+}
+.experiences__container {
+    flex: 1;
+}
+.experiences__container--accordion {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+.button_description {
+    margin-left: 1em;
+    display: flex;
+    align-items: baseline;
+}
