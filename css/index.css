@@ -8,6 +8,7 @@
     --color-button-activate:#4AA96C;
     --color-yellow: #F7F39A;
     /* Size letters */
+    --title-nav: 40px;
     --title-title: 40px;
     --title-paragraph: 30px;
     --title-alpha: 20px;
@@ -25,6 +26,7 @@ a {
     font-size: var(--title-alpha);
     font-weight: bold;
     text-decoration: none;
+    display: block;
 }
 span {
     font-size: var(--title-alpha);
@@ -61,6 +63,7 @@ a:visited {
     margin: 0;
 }
 
+
 #main {
     display: flex;
     justify-content: center;
@@ -68,6 +71,7 @@ a:visited {
 .header__container {
     max-width: var(--max-width);
 }
+
 .container__content{
     display: flex;
     flex-direction: row;
@@ -101,23 +105,40 @@ article{
 section{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; 
 }
-.article__container {
+.article__container{
     max-width: var(--max-width);
     width: 100%;
 }
 .item{
+    width: 100%;
     display: flex;
     flex-direction: column;
+}
+.item h1{
+    padding-left: 1em;
 }
 .item__container {
     display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
+
 .item__container--left {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
+
+.item__container--right {
+    flex: 2;
+    padding: 0 5em;
+}
+
 .button{
     border-radius: 50px;
     width: 100%;
@@ -137,14 +158,12 @@ section{
     background-color: var(--color-button-activate)
 }
 .item__container--tablinks {
-    width: 330px;
+    width: 80%;
 }
-
-.item__container--right {
-    width: 100%;
-    padding: 0 5em;
+.selectTool {
+    width: 80%;
+    border: 2px solid var(--color-backgroud);
 }
-
 .item__container--number {
     width: 100%;
     background-color: var(--color-yellow);
@@ -208,4 +227,60 @@ article section {
     margin-left: 1em;
     display: flex;
     align-items: baseline;
+}
+
+#selectBox {
+    display: none;
+}
+@media only screen and (max-width: 820px) {
+    :root {
+        /* Size letters */
+        --title-title: 30px;
+        --title-paragraph: 20px;
+    }
+  }
+
+@media only screen and (max-width: 600px){
+    .items__right{
+        display: none;
+    }
+    .item__container--tablinks{
+        display: none;
+    }
+    .item__container{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .item__container--left{
+        width: 100%;
+    }
+    .item__container--right{
+        padding-top: 1em;
+    }
+    .item__container--skill{
+        
+    }
+    #selectBox{
+        display: flex;
+    }
+    /*
+    .container__items{
+        display: flex;
+        flex-direction: column;
+    }
+    .items__right ul {
+        
+        display: flex;
+        flex-direction: column;
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        
+    }
+    .items__right ul li :hover {
+        border: 2em;
+        background-color: var(--color-button-activate);
+    }
+    */
 }

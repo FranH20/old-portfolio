@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet"> 
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div id="container">
@@ -22,12 +23,13 @@
                     </div> 
                     <div class="items__right">
                         <ul>
-                            <li></li>
                             <li><a href="#main">Acerca de mi</a></li>
                             <li><a href="#skills">Skills</a></li>
+                            <!--
                             <li><a>Experiencia</a></li>
                             <li><a>Proyectos</a></li>
                             <li><a>Estudios</a></li>
+                            -->
                         </ul>
                     </div>
                 </div>
@@ -62,6 +64,15 @@
                                 <button class="button item__container--tablinks" onclick="openSkill(event, 'database')">Base de datos</button>
                                 <button class="button item__container--tablinks" onclick="openSkill(event, 'design')">Diseño</button>
                                 <button class="button item__container--tablinks" onclick="openSkill(event, 'tools')">Herramientas</button>
+                                <select id="selectBox" name="select" class="button selectTool"onchange="changeFunc();">
+                                    <option value="lenguajes" selected>Lenguajes</option>
+                                    <option value="frontend" >Front-End</option>
+                                    <option value="backend" >Back-End</option>
+                                    <option value="mobile" >Desarrollo movil</option>
+                                    <option value="database" >Base de datos</option>
+                                    <option value="design" >Diseño</option>
+                                    <option value="tools" >Herramientas</option>
+                                </select>
                             </div>
                             <div class="item__container--right">
                                 <div id="lenguajes" class="item__container--skill">
@@ -290,6 +301,7 @@
                     </div>
                 </div>
             </section>
+            <!--
             <section id="experiences">
                 <div class="article__container">
                     <div class="item">
@@ -311,9 +323,11 @@
                     </div>
                 </div>
             </section>
+            -->
         </article>
         <footer></footer>
     </div>
 </body>
+<!--<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>-->
 <script src="./js/index.js"></script>
 </html>
