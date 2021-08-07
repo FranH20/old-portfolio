@@ -30,6 +30,7 @@ a {
 }
 a:link {
     text-decoration: none;
+    color: var(--color-secondary);
 }
 span {
     font-size: var(--title-alpha);
