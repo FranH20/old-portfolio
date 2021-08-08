@@ -22,21 +22,8 @@ p {
     text-align: justify;
     font-size: var(--title-paragraph);
 }
-a {
-    font-size: var(--title-alpha);
-    font-weight: bold;
-    text-decoration: none;
-    display: block;
-}
-a:link {
-    text-decoration: none;
-    color: var(--color-secondary);
-}
 span {
     font-size: var(--title-alpha);
-}
-a:visited {
-    color: var(--color-secondary);
 }
 .nav__container{
     display: flex;
@@ -55,6 +42,9 @@ a:visited {
 .items__left {
     flex: 1;
 }
+.items__left a{
+    flex: 1;
+}
 .items__right {
     flex: 3;
 }
@@ -66,8 +56,20 @@ a:visited {
     padding: 0;
     margin: 0;
 }
+.container__items a {
+    font-size: var(--title-alpha);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+.container__items a:link {
+    text-decoration: none;
+    color: var(--color-secondary);
+}
 
-
+.container__items a:visited {
+    color: var(--color-secondary);
+}
 #main {
     display: flex;
     justify-content: center;
@@ -145,7 +147,6 @@ section{
 
 .button{
     border-radius: 50px;
-    width: 100%;
     padding: 0.2em;
     margin: 0.2em 0;
     order: none;
@@ -220,13 +221,37 @@ article section {
     padding-bottom: 2em;
 }
 .experiences__container {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    align-content: center;
 }
 .experiences__container--accordion {
     display: flex;
     justify-content: space-between;
-    transition: 0.4s;
 }
+.experiences__detail{
+    background-color: var(--color-secondary);
+    color: var(--color-backgroud);
+    display: flex;
+    border: 2px solid var(--color-light);
+}
+.experiences__detail p {
+    margin-left: 15px;
+    font-size: var(--title-alpha);
+    line-height: 1.2em;
+}
+.experiences__detail p a{
+    color: var(--color-primary);
+}
+
+.experiences__detail img{
+    width: 24px;
+}
+.experiences__detail:hover{
+    background-color: var(--color-secondary);   
+}
+
 .button_description {
     margin-left: 1em;
     display: flex;
@@ -236,6 +261,10 @@ article section {
 #selectBox {
     display: none;
 }
+#experiences__block1{
+    display: none;
+    flex-direction: column;}
+#experiences__block2{display: none;flex-direction: column;}
 @media only screen and (max-width: 820px) {
     :root {
         /* Size letters */
