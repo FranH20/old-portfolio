@@ -187,22 +187,22 @@ section{
     padding: 10px 0;
 }
 /* Lenguajes */
-.python {width: 70%; border-radius: 58px;background-color: var(--color-light);}
-.js {width: 30%; border-radius: 58px;background-color: var(--color-light);}
-.java {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.python {width: 55%; border-radius: 58px;background-color: var(--color-light);}
+.js {width: 25%; border-radius: 58px;background-color: var(--color-light);}
+.java {width: 35%; border-radius: 58px;background-color: var(--color-light);}
 .csharp {width: 30%; border-radius: 58px;background-color: var(--color-light);}
 /* Front-End */
 .html {width: 75%; border-radius: 58px;background-color: var(--color-light);}
 .css {width: 70%; border-radius: 58px;background-color: var(--color-light);}
 .reactjs {width: 35%; border-radius: 58px;background-color: var(--color-light);}
 /* Back-End */
-.fastapi {width: 55%; border-radius: 58px;background-color: var(--color-light);}
-.flask {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.fastapi {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.flask {width: 35%; border-radius: 58px;background-color: var(--color-light);}
 .django {width: 25%; border-radius: 58px;background-color: var(--color-light);}
-.nodejs {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+.nodejs {width: 30%; border-radius: 58px;background-color: var(--color-light);}
 /* Desarrollo movil */
 .androidstudio {width: 40%; border-radius: 58px;background-color: var(--color-light);}
-.reactnative {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+.reactnative {width: 25%; border-radius: 58px;background-color: var(--color-light);}
 /* Base de datos */
 .sqlserver {width: 35%; border-radius: 58px;background-color: var(--color-light);}
 .postgresql {width: 20%; border-radius: 58px;background-color: var(--color-light);}
@@ -271,7 +271,7 @@ article section {
     color: var(--color-primary);
     font-weight: bold;
     margin-left: 35px;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 .projects_itemcontainer{
     margin-left: 35px;
@@ -317,6 +317,93 @@ article section {
 .projects__item--github img{
     margin-right: 1em;
 }
+.study__item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 500px;
+}
+.study__item img{
+    width: 25%;
+}
+.study__item--description{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+}
+.study__item--description h3{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.study__item--description img {
+    margin-right: 0.5em;
+    width: 1em;
+}
+.study__item--description a{
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+    color: var(--color-backgroud);
+}
+.study__item--description a:active{
+    color: var(--color-backgroud);
+}
+
+
+footer{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+}
+footer p{
+    font-size: var(--title-alpha);
+}
+.footer__cotainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 1.5em;
+}
+.footer__cotainer p {
+    margin: auto;
+}
+.footer__cotainer b{
+    font-weight: bold;
+}
+.footer__top{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.copyrigth{
+    margin: auto;
+    padding-top: 1em;
+}
+.footer__contacto{
+    flex: 1;
+    display: flex;
+}
+.footer__imgs{
+    display: flex;
+    justify-content: flex-end;
+    flex: 2;
+}
+.footer__imgs a{
+    margin-left: 1em;
+}
+@media only screen and (max-width: 1300px){
+
+    .footer__imgs{
+        padding-top: 1em;
+        display: flex;
+        justify-content: center;
+    }
+    .footer__imgs a img{
+        width: 2em;
+    }
+}
 @media only screen and (max-width: 820px) {
     :root {
         /* Size letters */
@@ -336,8 +423,24 @@ article section {
     .projects__item--box{
         height: auto;
     }
+    /* .footer__cotainer{
+        display: flex;
+    }
+    .footer__top{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__imgs{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer__imgs a{
+        margin: 0;
+    }   
+    .footer__imgs a img{
+        width: 30px;
+    } */
   }
-
 @media only screen and (max-width: 600px){
     .items__right{
         display: none;
