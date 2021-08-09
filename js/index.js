@@ -19,7 +19,7 @@ function openSkill(evt, skillName) {
 
 function openAccordion(blockName){
   block_element = document.getElementById(blockName);
-  
+  console.log(block_element)
   if (block_element.style.display === 'none'){
     console.log('arr1')
     block_element.style.display = 'flex';
