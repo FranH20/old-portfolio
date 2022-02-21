@@ -189,33 +189,35 @@ section{
 }
 /* Lenguajes */
 .python {width: 55%; border-radius: 58px;background-color: var(--color-light);}
-.js {width: 25%; border-radius: 58px;background-color: var(--color-light);}
-.java {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+.js {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.java {width: 80%; border-radius: 58px;background-color: var(--color-light);}
 .csharp {width: 30%; border-radius: 58px;background-color: var(--color-light);}
 /* Front-End */
-.html {width: 75%; border-radius: 58px;background-color: var(--color-light);}
-.css {width: 70%; border-radius: 58px;background-color: var(--color-light);}
-.reactjs {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+.html {width: 100%; border-radius: 58px;background-color: var(--color-light);}
+.css {width: 85%; border-radius: 58px;background-color: var(--color-light);}
+.reactjs {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.angular {width: 30%; border-radius: 58px;background-color: var(--color-light);}
+.thymeleaf {width: 60%; border-radius: 58px;background-color: var(--color-light);}
 /* Back-End */
-.fastapi {width: 40%; border-radius: 58px;background-color: var(--color-light);}
-.flask {width: 35%; border-radius: 58px;background-color: var(--color-light);}
-.django {width: 25%; border-radius: 58px;background-color: var(--color-light);}
-.nodejs {width: 30%; border-radius: 58px;background-color: var(--color-light);}
+.fastapi {width: 80%; border-radius: 58px;background-color: var(--color-light);}
+.flask {width: 50%; border-radius: 58px;background-color: var(--color-light);}
+.springboot {width: 80%; border-radius: 58px;background-color: var(--color-light);}
+.nodejs {width: 40%; border-radius: 58px;background-color: var(--color-light);}
 /* Desarrollo movil */
-.androidstudio {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.androidstudio {width: 70%; border-radius: 58px;background-color: var(--color-light);}
 .reactnative {width: 25%; border-radius: 58px;background-color: var(--color-light);}
 /* Base de datos */
-.sqlserver {width: 35%; border-radius: 58px;background-color: var(--color-light);}
+.sqlserver {width: 50%; border-radius: 58px;background-color: var(--color-light);}
 .postgresql {width: 20%; border-radius: 58px;background-color: var(--color-light);}
-.mysql {width: 65%; border-radius: 58px;background-color: var(--color-light);}
+.mysql {width: 80%; border-radius: 58px;background-color: var(--color-light);}
 .mongodb {width: 45%; border-radius: 58px;background-color: var(--color-light);}
 .firebase {width: 45%; border-radius: 58px;background-color: var(--color-light);}
 /* Diseño */
-.figma {width: 40%; border-radius: 58px;background-color: var(--color-light);}
+.figma {width: 60%; border-radius: 58px;background-color: var(--color-light);}
 .adobexd {width: 20%; border-radius: 58px;background-color: var(--color-light);}
 /* Herramientas */
-.git {width: 75%; border-radius: 58px;background-color: var(--color-light);}
-.github {width: 65%; border-radius: 58px;background-color: var(--color-light);}
+.git {width: 85%; border-radius: 58px;background-color: var(--color-light);}
+.github {width: 75%; border-radius: 58px;background-color: var(--color-light);}
 .debian {width: 30%; border-radius: 58px;background-color: var(--color-light);}
 
 article section {
@@ -264,6 +266,8 @@ article section {
 }
 #experiences__block1{flex-direction: column;}
 #experiences__block2{flex-direction: column;}
+#experiences__block3{flex-direction: column;}
+
 .projects__container{
     flex: 1;
 }
